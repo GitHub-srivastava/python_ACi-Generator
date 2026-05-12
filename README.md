@@ -23,7 +23,7 @@ This dataset is designed for graph-based learning, where each A–Ci curve can b
 
 | File | Description |
 |---|---|
-| `ACi_GNN_MATLAB_to_Python_allow_2ids.ipynb` | Updated Python notebook that allows selected curves to contain at least two limitation classes. |
+| `ACi_GNN_Python.ipynb` | Updated Python notebook that allows selected curves to contain at least two limitation classes. |
 | `README.md` | Project documentation. |
 
 If file names are changed in the repository, use the notebook containing the latest version of the data generator and parallel execution functions.
