@@ -23,7 +23,6 @@ This dataset is designed for graph-based learning, where each A–Ci curve can b
 
 | File | Description |
 |---|---|
-| `ACi_GNN_MATLAB_to_Python.ipynb` | Main Python notebook for synthetic A–Ci curve generation. |
 | `ACi_GNN_MATLAB_to_Python_allow_2ids.ipynb` | Updated Python notebook that allows selected curves to contain at least two limitation classes. |
 | `README.md` | Project documentation. |
 
@@ -109,7 +108,6 @@ Data, t, accepted, random_indices = callUniformSelect(
     requiredpoints,
     Data,
     t,
-    rng=rng,
     min_curve_ids=2,
     min_selected_ids=2,
 )
@@ -155,7 +153,7 @@ Generates multiple synthetic A–Ci curves sequentially.
 ```python
 Data = dataGeneratorUniform_forGNN(
     Number_of_curves=6000,
-    output_dir="GeneratedData/GNN_Data",
+    output_dir="GeneratedData",
     seed=42,
 )
 ```
@@ -169,7 +167,7 @@ This is the recommended function for large datasets.
 ```python
 Data = dataGeneratorUniform_forGNN_parallel(
     Number_of_curves=6000,
-    output_dir="GeneratedData/GNN_Data",
+    output_dir="GeneratedData",
     seed=42,
     n_jobs=-1,
 )
@@ -188,7 +186,7 @@ To use a fixed number of CPU cores:
 ```python
 Data = dataGeneratorUniform_forGNN_parallel(
     Number_of_curves=6000,
-    output_dir="GeneratedData/GNN_Data",
+    output_dir="GeneratedData",
     seed=42,
     n_jobs=4,
 )
@@ -223,7 +221,7 @@ For a small test run:
 ```python
 Data = dataGeneratorUniform_forGNN_parallel(
     Number_of_curves=10,
-    output_dir="GeneratedData/GNN_Data",
+    output_dir="GeneratedData",
     seed=42,
     n_jobs=2,
 )
@@ -234,7 +232,7 @@ For full dataset generation:
 ```python
 Data = dataGeneratorUniform_forGNN_parallel(
     Number_of_curves=6000,
-    output_dir="GeneratedData/GNN_Data",
+    output_dir="GeneratedData",
     seed=42,
     n_jobs=-1,
 )
