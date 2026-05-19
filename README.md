@@ -323,7 +323,11 @@ This enables node-level classification of photosynthetic limitation states using
 
 ## License
 
-This project is licensed under the GNU General Public License v3.0
+Python A-Ci Data-Generation Code is licensed under the GNU General Public License v3.0 or later.
+
+This means that the code may be used, modified, and redistributed, but redistributed versions and derivative software must remain under GPL-compatible open-source terms.
+
+See the [LICENSE](LICENSE) file for the full license text.
 
 ## Citation / Acknowledgement
 
