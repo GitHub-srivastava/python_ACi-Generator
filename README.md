@@ -323,7 +323,7 @@ This enables node-level classification of photosynthetic limitation states using
 
 ## License
 
-Add the appropriate license for your project, such as MIT, Apache-2.0, or a custom academic-use license.
+This project is licensed under the GNU General Public License v3.0
 
 ## Citation / Acknowledgement
 
